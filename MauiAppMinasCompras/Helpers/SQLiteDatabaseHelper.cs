@@ -1,4 +1,5 @@
 ﻿using MauiAppMinasCompras.Models;
+using MauiAppMinasCompras.Views;
 using SQLite;
 
 namespace MauiAppMinasCompras.Helpers
@@ -42,5 +43,9 @@ namespace MauiAppMinasCompras.Helpers
             return _conn.QueryAsync<Produtos>(sql);
         }
 
+        internal async Task Insert(Produto p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

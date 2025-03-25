@@ -1,11 +1,14 @@
+using MauiAppMinasCompras.Models;
+using System.Linq.Expressions;
+
 namespace MauiAppMinasCompras.Views;
 
 public partial class NovoProduto : ContentPage
 {
-	public NovoProduto()
-	{
-		InitializeComponent();
-	}
+    public NovoProduto()
+    {
+        InitializeComponent();
+    }
 
     private async void ToolbarItem_Clicked(object sender, EventArgs e)
     {
@@ -21,4 +24,13 @@ public partial class NovoProduto : ContentPage
             await App.Db.Insert(p);
             await DisplayAlert("Sucesso!", "Registro Inserido", "OK");
 
-}
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Ops", ex.Message, "OK");
+        }
+
+
+    }
+ }
+ 
