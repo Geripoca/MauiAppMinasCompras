@@ -43,7 +43,17 @@ namespace MauiAppMinasCompras.Helpers
             return _conn.QueryAsync<Produtos>(sql);
         }
 
-        internal async Task Insert(Produto p)
+        internal void Insert(Produto p)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Insert(Views.Produto p)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Update(Views.Produto p)
         {
             throw new NotImplementedException();
         }

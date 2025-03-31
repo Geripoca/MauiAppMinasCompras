@@ -57,6 +57,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Include="C:\Users\Wagner Marins\Favorites\Downloads\MauiAppMinhas Compras1\ListaProduto.xaml" Link="ListaProduto.xaml" />
+	  <Compile Include="C:\Users\Wagner Marins\Favorites\Downloads\MauiAppMinhas Compras1\SQLiteDatabaseHelper.cs" Link="SQLiteDatabaseHelper.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
